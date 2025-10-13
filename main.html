@@ -5,21 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Robot Verification</title>
   <style>
-    #imageContainer img {
+    #imageContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    img {
       width: 100px;
       height: 100px;
-      margin: 10px;
       cursor: pointer;
       border: 2px solid transparent;
-      transition: border-color 0.3s;
     }
-    #imageContainer img.selected {
+    img.selected {
       border-color: blue;
     }
     #reset, #verify {
       display: none;
       margin: 10px 5px;
-      padding: 5px 10px;
+      padding: 5px 15px;
       cursor: pointer;
     }
   </style>
