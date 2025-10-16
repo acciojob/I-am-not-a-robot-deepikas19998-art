@@ -2,39 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Robot Verification</title>
-  <style>
-    #imageContainer {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 20px;
-    }
-    img {
-      width: 100px;
-      height: 100px;
-      cursor: pointer;
-      border: 2px solid transparent;
-    }
-    img.selected {
-      border-color: blue;
-    }
-    #reset, #verify {
-      display: none;
-      margin: 10px 5px;
-      padding: 5px 15px;
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <h3 id="h">Please click on the identical tiles to verify that you are not a robot.</h3>
-  <div id="imageContainer"></div>
-  <button id="reset">Reset</button>
-  <button id="verify">Verify</button>
+
+  <div class="image-grid" id="image-grid"></div>
+
+  <div class="buttons">
+    <button id="reset" style="display:none;">Reset</button>
+    <button id="verify" style="display:none;">Verify</button>
+  </div>
+
   <p id="para"></p>
 
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
